@@ -37,4 +37,4 @@ Following the instructions from the offfical Laravel installation page https://l
 
 Demo Environment
 --------
-You can interact with the GraphQL interface by browsing to [Jallen](http://jallen.bakeshow.us)
+You can interact with a public instance of Jallen's GraphQL interface by browsing to [Jallen](http://jallen.bakeshow.us).
