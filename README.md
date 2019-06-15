@@ -1,2 +1,2 @@
 # jallen
-Project Allen Java repo
+Project Allen JavaScript repo
