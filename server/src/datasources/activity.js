@@ -7,7 +7,6 @@ class ActivityAPI extends RESTDataSource {
   }
   
 activityReducer(activity) {
-	console.log("in reducer");
   return {
     id: activity.key,
     name: activity.activity,
@@ -17,7 +16,6 @@ activityReducer(activity) {
 
 
 async getActivity() {
-	console.log("in here");
   const response = await this.get('activity');
   return this.activityReducer(response);
 }
