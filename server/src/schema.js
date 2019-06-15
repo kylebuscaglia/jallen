@@ -1,5 +1,6 @@
 const { gql } = require('apollo-server');
 
+// Declare our graphsql schema types
 const typeDefs = gql
 `type Activity {
   id: ID!
