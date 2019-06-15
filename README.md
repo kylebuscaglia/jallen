@@ -2,9 +2,9 @@
 
 Jallen is a [NodeJS based Apollo Server](https://www.apollographql.com/docs/apollo-server/) that consumes multiple backend datastores and consolidates them into a single GraphQL datalayer that can be queried.
 
-It is the data access layer that works in conjunction with [Pallen](https://github.com/kylebuscaglia/pallen) to form **Project Allen**, a SMS based personal assistant.
+It is the data access layer that works in conjunction with [Pallen](https://github.com/kylebuscaglia/pallen) to form **Allen**, a SMS based personal assistant.
 
-Jallen utilizes multple backend resources to provide the necessary data for **Project Allen**
+Jallen utilizes multple backend resources to provide the necessary data for **Allen**
   
     BoredAPI
     Yelp
