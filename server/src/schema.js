@@ -6,9 +6,19 @@ const typeDefs = gql
   type: String
   name: String
 }
+type Restaurant {
+  id: ID!
+  url: String
+  name: String
+  zip: String
+}
+type RandomFact {
+  fact: String
+}
 type Query {
   activity: Activity
-  countActivities: Int!
+  food(zip: String): [Restaurant]!
+  random: RandomFact!
 }
 `;
 

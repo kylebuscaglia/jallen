@@ -3,12 +3,16 @@ const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 
 const ActivityAPI = require('./datasources/activity');
+const FoodAPI = require('./datasources/food');
+const RandomAPI = require('./datasources/random');
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({
-    activityAPI: new ActivityAPI()
+    activityAPI: new ActivityAPI(),
+	foodAPI: new FoodAPI(),
+	randomAPI: new RandomAPI()
   })
 });
 
