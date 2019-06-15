@@ -6,6 +6,7 @@ const ActivityAPI = require('./datasources/activity');
 
 const server = new ApolloServer({
   typeDefs,
+  resolvers,
   dataSources: () => ({
     activityAPI: new ActivityAPI()
   })
