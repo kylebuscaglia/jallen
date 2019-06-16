@@ -3,7 +3,7 @@ const { RESTDataSource } = require('apollo-datasource-rest');
 // Our API that will get a food suggestion
 class FoodAPI extends RESTDataSource {
   constructor() {
-    super();
+	super();
     // Yelps base url for their api
     this.baseURL = 'https://api.yelp.com/v3/businesses';
   }
@@ -25,8 +25,8 @@ class FoodAPI extends RESTDataSource {
   // Issues the HTTP request to yelp to get our suggestion.
   // Needs a zip code as a parameter
   async getAllFood(zip) {
-    // Get a random number
-    var offset = Math.floor((Math.random() * 30) + 1);
+    // Get a random number between 1 an 20 (default results returned by yelp)
+    var offset = Math.floor((Math.random() * 20) + 1);
     // we limit each search to 1 result and we use our randomly generated offset to get different results
     const response = await this.get('search?limit=1&offset=' + offset + '&location=' + zip);
     
