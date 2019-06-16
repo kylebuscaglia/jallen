@@ -12,7 +12,7 @@ Jallen utilizes multiple backend resources to provide the necessary data for **A
   
 Each Rest API is hooked into by Jallen's backend data processing functionality to provide a single unified GraphQL endpoint for **Pallen** to query.
 
-Arcitecture Overview
+Architecture Overview
 --------
 ![Image of Allen-Architecture]( https://raw.githubusercontent.com/kylebuscaglia/jallen/master/Allen-Architecture.jpeg )
 
